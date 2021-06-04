@@ -6,7 +6,7 @@ urlpatterns = [
 
     path('feepy/',views.Fee_Python),
 
-    path('feepy/',views.Fee_java),
+    path('feejava/',views.Fee_java),
 
-    path('feepy/',views.Fee_cpp)
+    path('feecpp/',views.Fee_cpp)
 ]
