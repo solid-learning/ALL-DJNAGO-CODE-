@@ -1,0 +1,9 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+
+def course_Django(request):
+    return render(request,'courseone.html')
+
+def course_Python(request):
+    return render(request,'coursetwo.html')
