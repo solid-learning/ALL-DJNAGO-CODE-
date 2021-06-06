@@ -1,0 +1,12 @@
+body{
+    background-color:darkgrey;
+}
+div{
+    padding: 80px;
+    padding-left: 240px;
+}
+h1{
+    padding-left: 230px;
+    font-size:40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
