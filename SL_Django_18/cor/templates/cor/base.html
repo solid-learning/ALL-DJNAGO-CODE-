@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{%static 'cor/css/bootstrap.css'%}">
+  {%block link%}
+
+  <link rel="stylesheet" href="{%static 'cor/css/cor.css'%}">
+  {%endblock link%}
+  <title>Document</title>
+</head>
+
+<body>
+    {% include 'cor/include.html' %}
+
+  {%block contant%}
+
+
+  <h1 style="padding-left: 190px;">WEL-COME IN SOLID LEARNING LLP</h1>
+  
+  <div class="style">
+    <img src="{%static 'cor/img/s.png'%}" alt="error">
+  </div>
+  {%endblock contant%}
+
+
+
+
+
+
+  <script src="{%static 'cor/js/poper.js'%}"></script>
+  <script src="{%static 'cor/js/bootstrap.js'%}"></script>
+  <script src="{%static 'cor/js/jQuery.js'%}"></script>
+  <script src="{%static 'cor/js/all.min.js'%}"></script>
+</body>
+
+</html>
