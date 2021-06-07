@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'cor/css/all.css'%}">
+    <link rel="stylesheet" href="{%static 'cor/css/bootstrap.css'%}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    {%block corcss%}
+    <link rel="stylesheet" href="{%static 'cor/css/cor.css'%}">
+    {%endblock corcss%}
+</head>
+<body>
+
+     <div class="container-fluid bg-dark " >
+     <div class="row">
+     <div class="col-md-2">
+        {%include 'cor/nav.html'%}
+        </div>
+       
+     <div class="col-md-10">
+     {%block content%}
+     {%endblock content%}
+
+     </div>
+     </div>
+     </div>
+
+
+
+
+
+
+    <script src="{%static 'cor/js/all.js'%}"></script>
+    <script src="{%static 'cor/js/bootstrap.js'%}"></script>
+    <script src="{%static 'cor/js/JQuary.js'%}"></script>
+    <script src="{%static 'cor/js/poper.js'%}"></script>
+</body>
+</html>
