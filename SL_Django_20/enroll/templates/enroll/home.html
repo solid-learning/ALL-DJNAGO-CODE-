@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td,th{
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+ <h1>{{stud}}</h1>
+
+         {%if stud%}
+         <h1>show Data</h1>
+                      
+                     
+                 <table>
+                     <tr>
+                     <th>ID</th>
+                     <th>NAME</th>
+                     <th>EMAIL</th>
+                     <th>COLLAGE</th>
+                     <th>STATE</th>
+                     
+                     </tr>
+                       {%for st in stud%}
+                     <tr>
+                         <td>{{st.stuid}}</td>
+                         <td>{{st.stuname}}</td>
+                         <td>{{st.stuemail}}</td>
+                         <td>{{st.stucollage}}</td>
+                         <td>{{st.stustate}}</td>
+                         
+                     </tr>
+                       {%endfor%}
+                 </table>
+                         {%else%}
+         <h1>no data</h1>
+         {%endif%}
+    
+                           
+                           
+                           
+                           
+                         
+                       
+                          
+
+
+     
+</body>
+</html>
